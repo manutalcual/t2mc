@@ -1,6 +1,6 @@
 dnl Standard configure.ac
-AC_PREREQ(2.53)
-AC_INIT([t2mc], [0.1.0], [manutalcual@gmail.com])
+AC_PREREQ([2.71])
+AC_INIT([t2mc],[0.1.0],[manutalcual@gmail.com])
 AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([foreign dist-bzip2])
 AM_CONFIG_HEADER([config.h:config.in])
@@ -14,17 +14,11 @@ dnl AC_PROG_CC
 dnl AC_PROG_LIBTOOL
 
 CXXFLAGS="-Wall -g -O0 -std=c++20 -Wall -Wextra -pedantic"
-dnl Checks for libraries.
-
-dnl Checks for header files.
-dnl AC_HEADER_STDC
-dnl AC_CHECK_HEADERS([sys/types.h sys/socket.h stdlib.h unistd.h])
 
 dnl Checks for typedefs, structures, and compiler characteristics.
 dnl AC_ARG_WITH([categoria],
 dnl
-dnl 	AC_HELP_STRING([--with-categoria=CAT],
-dnl 	[Definir categoria de log]),
+dnl 	AS_HELP_STRING([--with-categoria=CAT],[dnl 	Definir categoria de log]),
 dnl 	[categoria=$withval], [LOG_CATEGORIA=DEBUG])
 
 dnl if test "$categoria" != ""; then
